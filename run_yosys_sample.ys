@@ -1,0 +1,10 @@
+read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog rtl/*.v
+hierarchy -check -top async_fifo
+synth -top async_fifo
+abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+stat
+flatten
+opt
+show async_fifo
+write_verilog -noattr -noexpr -nodec async_fifo_sta.v

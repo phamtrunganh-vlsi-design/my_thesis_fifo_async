@@ -1,0 +1,735 @@
+$date
+	Fri Mar 20 23:01:47 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 32 ! b_rdata [31:0] $end
+$var wire 1 " b_full $end
+$var wire 1 # b_empty $end
+$var wire 32 $ a_rdata [31:0] $end
+$var wire 1 % a_full $end
+$var wire 1 & a_empty $end
+$var reg 1 ' a_clk $end
+$var reg 1 ( a_dir $end
+$var reg 1 ) a_rinc $end
+$var reg 1 * a_rst_n $end
+$var reg 32 + a_wdata [31:0] $end
+$var reg 1 , a_winc $end
+$var reg 1 - b_clk $end
+$var reg 1 . b_dir $end
+$var reg 1 / b_rinc $end
+$var reg 1 0 b_rst_n $end
+$var reg 32 1 b_wdata [31:0] $end
+$var reg 1 2 b_winc $end
+$var integer 32 3 i [31:0] $end
+$scope module dut $end
+$var wire 1 ' a_clk $end
+$var wire 1 ( a_dir $end
+$var wire 1 ) a_rinc $end
+$var wire 1 * a_rst_n $end
+$var wire 32 4 a_wdata [31:0] $end
+$var wire 1 , a_winc $end
+$var wire 1 - b_clk $end
+$var wire 1 . b_dir $end
+$var wire 1 / b_rinc $end
+$var wire 1 0 b_rst_n $end
+$var wire 32 5 b_wdata [31:0] $end
+$var wire 1 2 b_winc $end
+$var wire 5 6 b_wptr [4:0] $end
+$var wire 4 7 b_waddr [3:0] $end
+$var wire 5 8 b_rptr [4:0] $end
+$var wire 32 9 b_rdata [31:0] $end
+$var wire 4 : b_raddr [3:0] $end
+$var wire 1 " b_full $end
+$var wire 1 # b_empty $end
+$var wire 1 ; b_afull $end
+$var wire 1 < b_aempty $end
+$var wire 4 = b_addr [3:0] $end
+$var wire 5 > b2a_wptr [4:0] $end
+$var wire 5 ? b2a_rptr [4:0] $end
+$var wire 5 @ a_wptr [4:0] $end
+$var wire 4 A a_waddr [3:0] $end
+$var wire 5 B a_rptr [4:0] $end
+$var wire 32 C a_rdata [31:0] $end
+$var wire 4 D a_raddr [3:0] $end
+$var wire 1 % a_full $end
+$var wire 1 & a_empty $end
+$var wire 1 E a_afull $end
+$var wire 1 F a_aempty $end
+$var wire 4 G a_addr [3:0] $end
+$var wire 5 H a2b_wptr [4:0] $end
+$var wire 5 I a2b_rptr [4:0] $end
+$scope module a_rptr_inst $end
+$var wire 1 ' rclk $end
+$var wire 5 J rgraynext [4:0] $end
+$var wire 5 K rgraynextm1 [4:0] $end
+$var wire 1 ) rinc $end
+$var wire 1 * rrst_n $end
+$var wire 5 L rq2_wptr [4:0] $end
+$var wire 1 M rempty_val $end
+$var wire 5 N rbinnext [4:0] $end
+$var wire 4 O raddr [3:0] $end
+$var wire 1 P arempty_val $end
+$var reg 1 F arempty $end
+$var reg 5 Q rbin [4:0] $end
+$var reg 1 & rempty $end
+$var reg 5 R rptr [4:0] $end
+$upscope $end
+$scope module a_wptr_inst $end
+$var wire 1 ' wclk $end
+$var wire 5 S wgraynext [4:0] $end
+$var wire 5 T wgraynextp1 [4:0] $end
+$var wire 1 , winc $end
+$var wire 1 * wrst_n $end
+$var wire 5 U wq2_rptr [4:0] $end
+$var wire 1 V wfull_val $end
+$var wire 5 W wbinnext [4:0] $end
+$var wire 4 X waddr [3:0] $end
+$var wire 1 Y awfull_val $end
+$var reg 1 E awfull $end
+$var reg 5 Z wbin [4:0] $end
+$var reg 1 % wfull $end
+$var reg 5 [ wptr [4:0] $end
+$upscope $end
+$scope module b_rptr_inst $end
+$var wire 1 - rclk $end
+$var wire 5 \ rgraynext [4:0] $end
+$var wire 5 ] rgraynextm1 [4:0] $end
+$var wire 1 / rinc $end
+$var wire 1 0 rrst_n $end
+$var wire 5 ^ rq2_wptr [4:0] $end
+$var wire 1 _ rempty_val $end
+$var wire 5 ` rbinnext [4:0] $end
+$var wire 4 a raddr [3:0] $end
+$var wire 1 b arempty_val $end
+$var reg 1 < arempty $end
+$var reg 5 c rbin [4:0] $end
+$var reg 1 # rempty $end
+$var reg 5 d rptr [4:0] $end
+$upscope $end
+$scope module b_wptr_inst $end
+$var wire 1 - wclk $end
+$var wire 5 e wgraynext [4:0] $end
+$var wire 5 f wgraynextp1 [4:0] $end
+$var wire 1 2 winc $end
+$var wire 1 0 wrst_n $end
+$var wire 5 g wq2_rptr [4:0] $end
+$var wire 1 h wfull_val $end
+$var wire 5 i wbinnext [4:0] $end
+$var wire 4 j waddr [3:0] $end
+$var wire 1 k awfull_val $end
+$var reg 1 ; awfull $end
+$var reg 5 l wbin [4:0] $end
+$var reg 1 " wfull $end
+$var reg 5 m wptr [4:0] $end
+$upscope $end
+$scope module fifomem_dp $end
+$var wire 4 n a_addr [3:0] $end
+$var wire 1 ' a_clk $end
+$var wire 1 o a_rinc $end
+$var wire 32 p a_wdata [31:0] $end
+$var wire 1 q a_winc $end
+$var wire 4 r b_addr [3:0] $end
+$var wire 1 - b_clk $end
+$var wire 1 s b_rinc $end
+$var wire 32 t b_wdata [31:0] $end
+$var wire 1 u b_winc $end
+$var wire 32 v b_rdata [31:0] $end
+$var wire 32 w a_rdata [31:0] $end
+$scope begin fallthrough $end
+$upscope $end
+$upscope $end
+$scope module sync_a2b_rptr $end
+$var wire 1 - dest_clk $end
+$var wire 1 0 dest_rst_n $end
+$var wire 5 x src_ptr [4:0] $end
+$var reg 5 y dest_ptr [4:0] $end
+$var reg 5 z ptr_x [4:0] $end
+$upscope $end
+$scope module sync_a2b_wptr $end
+$var wire 1 - dest_clk $end
+$var wire 1 0 dest_rst_n $end
+$var wire 5 { src_ptr [4:0] $end
+$var reg 5 | dest_ptr [4:0] $end
+$var reg 5 } ptr_x [4:0] $end
+$upscope $end
+$scope module sync_b2a_rptr $end
+$var wire 1 ' dest_clk $end
+$var wire 1 * dest_rst_n $end
+$var wire 5 ~ src_ptr [4:0] $end
+$var reg 5 !" dest_ptr [4:0] $end
+$var reg 5 "" ptr_x [4:0] $end
+$upscope $end
+$scope module sync_b2a_wptr $end
+$var wire 1 ' dest_clk $end
+$var wire 1 * dest_rst_n $end
+$var wire 5 #" src_ptr [4:0] $end
+$var reg 5 $" dest_ptr [4:0] $end
+$var reg 5 %" ptr_x [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %"
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+bx }
+bx |
+bx {
+bx z
+bx y
+bx x
+bx w
+bx v
+0u
+bx t
+0s
+bx r
+0q
+bx p
+0o
+bx n
+bx m
+bx l
+xk
+bx j
+bx i
+xh
+bx g
+bx f
+bx e
+bx d
+bx c
+xb
+bx a
+bx `
+x_
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+xY
+bx X
+bx W
+xV
+bx U
+bx T
+bx S
+bx R
+bx Q
+xP
+bx O
+bx N
+xM
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+xF
+xE
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+x<
+x;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+02
+bx 1
+00
+0/
+1.
+0-
+0,
+bx +
+0*
+0)
+0(
+0'
+x&
+x%
+bx $
+x#
+x"
+bx !
+$end
+#2000
+0V
+0Y
+b0 G
+b0 n
+1M
+0P
+b0 A
+b0 X
+b1 T
+b0 S
+b0 D
+b0 O
+b1 K
+b0 J
+b0 >
+b0 L
+b0 $"
+b0 %"
+b0 ?
+b0 U
+b0 !"
+b0 ""
+b0 W
+b0 Z
+b0 @
+b0 [
+b0 {
+0%
+0E
+b0 N
+b0 Q
+b0 B
+b0 R
+b0 x
+1&
+0F
+1'
+#3000
+0h
+b0 =
+b0 r
+0k
+1_
+0b
+b0 7
+b0 j
+b1 f
+b0 e
+b0 :
+b0 a
+b1 ]
+b0 \
+b0 H
+b0 ^
+b0 |
+b0 }
+b0 I
+b0 g
+b0 y
+b0 z
+b0 i
+b0 l
+b0 6
+b0 m
+b0 #"
+0"
+0;
+b0 `
+b0 c
+b0 8
+b0 d
+b0 ~
+1#
+0<
+1-
+#4000
+0'
+#6000
+1'
+0-
+#8000
+0'
+#9000
+1-
+#10000
+1'
+#12000
+0'
+0-
+#14000
+1'
+#15000
+1-
+#16000
+0'
+#18000
+1'
+0-
+#20000
+0'
+#21000
+1-
+#22000
+1'
+#24000
+0'
+0-
+#26000
+1'
+#27000
+1-
+#28000
+0'
+#30000
+1'
+0-
+#32000
+0'
+#33000
+1-
+#34000
+1'
+#36000
+0'
+0-
+#38000
+1'
+#39000
+1-
+#40000
+0'
+#42000
+1'
+0-
+#44000
+0'
+#45000
+1-
+#46000
+1'
+#48000
+0'
+0-
+#50000
+b0 3
+1'
+10
+1*
+#51000
+b11 f
+b1 e
+b1 i
+1u
+12
+b0 1
+b0 5
+b0 t
+1-
+#52000
+0'
+#54000
+1'
+0-
+#56000
+0'
+#57000
+b1 =
+b1 r
+b1 7
+b1 j
+b1 l
+b1 6
+b1 m
+b1 #"
+b0 $
+b0 C
+b0 w
+bx !
+bx 9
+bx v
+b11 f
+b1 e
+b1 i
+0u
+b1 3
+02
+1-
+#58000
+b1 %"
+1'
+#60000
+0'
+0-
+#62000
+1P
+0M
+b1 >
+b1 L
+b1 $"
+1'
+#63000
+b10 f
+b11 e
+b10 i
+1u
+12
+b1 1
+b1 5
+b1 t
+1-
+#64000
+0'
+#66000
+0&
+1F
+1'
+0-
+#68000
+0'
+#69000
+b10 =
+b10 r
+b10 7
+b10 j
+b10 l
+b11 6
+b11 m
+b11 #"
+bx !
+bx 9
+bx v
+b10 f
+b11 e
+b10 i
+0u
+b10 3
+02
+1-
+#70000
+b11 %"
+1'
+#72000
+0'
+0-
+#74000
+0P
+b11 >
+b11 L
+b11 $"
+1'
+#75000
+b110 f
+b10 e
+b11 i
+1u
+12
+b10 1
+b10 5
+b10 t
+1-
+#76000
+0'
+#78000
+0F
+1'
+0-
+#80000
+0'
+#81000
+b11 =
+b11 r
+b11 7
+b11 j
+b11 l
+b10 6
+b10 m
+b10 #"
+bx !
+bx 9
+bx v
+b110 f
+b10 e
+b11 i
+0u
+b11 3
+02
+1-
+#82000
+b10 %"
+1'
+#84000
+0'
+0-
+#86000
+b10 >
+b10 L
+b10 $"
+1'
+#87000
+b111 f
+b110 e
+b100 i
+1u
+12
+b11 1
+b11 5
+b11 t
+1-
+#88000
+0'
+#90000
+b0 3
+1'
+0-
+#92000
+0'
+#93000
+b100 =
+b100 r
+b100 7
+b100 j
+b100 l
+b110 6
+b110 m
+b110 #"
+bx !
+bx 9
+bx v
+b111 f
+b110 e
+b100 i
+0u
+b1 3
+02
+1-
+#94000
+b110 %"
+0P
+b11 K
+b1 J
+b1 N
+1o
+1)
+1'
+#96000
+0'
+0-
+#98000
+b1 $
+b1 C
+b1 w
+b1 G
+b1 n
+b1 D
+b1 O
+b110 >
+b110 L
+b110 $"
+b1 Q
+b1 B
+b1 R
+b1 x
+b11 K
+b1 J
+b1 N
+0o
+0)
+1'
+#99000
+b1 z
+b101 f
+b111 e
+b101 i
+1u
+12
+b1 1
+b1 5
+b1 t
+1-
+#100000
+0'
+#102000
+b10 3
+1'
+0-
+#104000
+0'
+#105000
+b101 =
+b101 r
+b101 7
+b101 j
+b101 l
+b111 6
+b111 m
+b111 #"
+b1 I
+b1 g
+b1 y
+bx !
+bx 9
+bx v
+b101 f
+b111 e
+b101 i
+0u
+b11 3
+02
+1-
+#106000
+b111 %"
+b10 K
+b11 J
+b10 N
+1o
+1)
+1'
+#108000
+0'
+0-
+#110000
+b10 $
+b10 C
+b10 w
+b10 G
+b10 n
+b10 D
+b10 O
+b10 Q
+b11 B
+b11 R
+b11 x
+b111 >
+b111 L
+b111 $"
+b10 K
+b11 J
+b10 N
+0o
+0)
+1'
+#111000
+b11 z
+b100 f
+b101 e
+b110 i
+1u
+12
+b11 1
+b11 5
+b11 t
+1-
+#112000
+0'
+#114000

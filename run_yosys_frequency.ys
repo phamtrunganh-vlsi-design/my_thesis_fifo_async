@@ -1,0 +1,26 @@
+read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog rtl/*.v
+
+hierarchy -check -top async_fifo
+
+proc
+opt
+fsm
+opt
+memory
+opt
+
+techmap
+opt
+
+dfflibmap -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+
+flatten
+clean -purge
+
+stat
+stat -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+write_verilog -noattr -noexpr async_fifo_sta.v
