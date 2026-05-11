@@ -4,12 +4,14 @@
 This repository contains the RTL design and verification of an asynchronous FIFO using Verilog/SystemVerilog.
 
 Features:
-- Gray-code pointer synchronization
-- Full and empty flag generation
-- CDC synchronization modules
-- RTL simulation with waveform generation
-- Yosys synthesis flow
-- Static Timing Analysis using OpenSTA
+- Asynchronous read/write clock domains
+- FIFO memory configurations for 2-bit, 4-bit, 6-bit, and 8-bit RAM
+- Gray-code based pointer synchronization
+- FIFO full and empty detection
+- Clock domain crossing (CDC) synchronizers
+- RTL simulation with VCD waveform generation
+- Logic synthesis using Yosys
+- Static Timing Analysis (STA) with OpenSTA
+- Power analysis and area evaluation
 
 Tools: Icarus Verilog, GTKWave, Yosys, OpenSTA, OpenROAD, OpenLANE, SKY130. 
->>>>>>> 75745ad (add README)
