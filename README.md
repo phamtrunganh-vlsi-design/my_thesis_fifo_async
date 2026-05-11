@@ -1,16 +1,15 @@
-This repository contains the RTL design, simulation, synthesis, and timing analysis flow for an asynchronous FIFO implemented in Verilog/SystemVerilog. The project includes verification testbenches, synthesis scripts using Yosys, and static timing analysis setup.
 
-This project uses the SKY130 HD standard-cell library:
+# Asynchronous FIFO Design
 
-Process: SKY130
-Corner: Typical Typical
-Voltage: 1.8V
-Temperature: 25°C
+This repository contains the RTL design and verification of an asynchronous FIFO using Verilog/SystemVerilog.
 
-Tools
-Verilog / SystemVerilog
-Icarus Verilog
-GTKWave
-Yosys
-OpenSTA, OpenROAD, OpenLane
-SKY130 Standard Cell Library
+Features:
+- Gray-code pointer synchronization
+- Full and empty flag generation
+- CDC synchronization modules
+- RTL simulation with waveform generation
+- Yosys synthesis flow
+- Static Timing Analysis using OpenSTA
+
+Tools: Icarus Verilog, GTKWave, Yosys, OpenSTA, OpenROAD, OpenLANE, SKY130. 
+>>>>>>> 75745ad (add README)
